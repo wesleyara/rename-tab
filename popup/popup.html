@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rename Tab</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="brand">
+          <img class="brand-logo" src="../icons/icon-128.png" alt="" />
+          <div>
+            <h1>Rename Tab</h1>
+            <p>Títulos personalizados por rota</p>
+          </div>
+        </div>
+        <div class="menu-wrap">
+          <button class="icon-btn" id="menuBtn" type="button" title="Mais opções" aria-haspopup="menu" aria-expanded="false"></button>
+          <div class="menu" id="menu" role="menu" hidden>
+            <button type="button" role="menuitem" data-action="export"></button>
+            <button type="button" role="menuitem" data-action="import"></button>
+          </div>
+        </div>
+      </header>
+
+      <main class="view" id="view"></main>
+
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+      <input type="file" id="fileInput" accept="application/json,.json" hidden />
+    </div>
+
+    <script src="../src/shared.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

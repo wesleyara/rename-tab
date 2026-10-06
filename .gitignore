@@ -1,0 +1,21 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Dependências e builds
+node_modules/
+dist/
+*.zip
+*.crx
+*.pem
+
+# Logs
+*.log
+
+# Claude Code
+.claude/
